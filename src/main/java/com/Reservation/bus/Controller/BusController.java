@@ -22,7 +22,6 @@ public class BusController {
     public Bus addBus(@RequestBody Bus bus) {
         return repo.save(bus);
     }
-
     // Get All Buses
     @GetMapping
     public List<Bus> getAll() {

@@ -1,6 +1,7 @@
 package com.Reservation.bus.Entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Bus {
@@ -9,7 +10,10 @@ public class Bus {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Name cannot be empty")
     private String name;
+    @NotBlank(message = "Route cannot be empty")
+
     private String route;
 
     // getters and setters

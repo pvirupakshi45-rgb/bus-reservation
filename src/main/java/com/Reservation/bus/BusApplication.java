@@ -10,6 +10,9 @@ public class BusApplication {
 		SpringApplication.run(BusApplication.class, args);
 		
 		System.out.println("helooww ");
+		System.out.println("helooww1 ");
+
+
 
 	}
 
